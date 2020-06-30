@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static com.example.helloworld.R.string.toast_message;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void showToast(View view) {
-        Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, toast_message, Toast.LENGTH_SHORT);
         toast.show();
     }
 
