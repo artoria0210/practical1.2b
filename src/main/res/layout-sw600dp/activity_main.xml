@@ -16,23 +16,24 @@
         android:onClick="showToast"
         android:text="@string/Toast_text"
         android:textColor="@android:color/white"
-        android:textSize="60dp"
+        android:textSize="60sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/show_count"
-        android:layout_width="857dp"
-        android:layout_height="672dp"
+        android:layout_width="474dp"
+        android:layout_height="456dp"
         android:background="#FFEB3B"
         android:gravity="center"
         android:text="@string/zero"
         android:textAlignment="center"
-        android:textSize="200dp"
+        android:textSize="200sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154" />
 
     <Button
         android:id="@+id/button_count"
@@ -43,19 +44,21 @@
         android:background="@color/colorPrimary"
         android:text="@string/count_text"
         android:textColor="@android:color/white"
-        android:textSize="60dp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_toast"
+        app:layout_constraintVertical_bias="0.444" />
 
     <Button
         android:id="@+id/button_zero"
         android:layout_width="273dp"
         android:layout_height="113dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="232dp"
-        android:text="Zero"
-        android:textSize="60dp"
+        android:text="@string/Zero"
+        android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/button_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_toast"
